@@ -30,4 +30,7 @@ pm2 start "ls -la"
 pm2 startup
 # 保存项目状态
 pm2 save 
+# 恢复
+pm2 resurrect
+
 ```
