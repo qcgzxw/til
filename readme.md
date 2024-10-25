@@ -4,12 +4,19 @@
 
 不定期整理
 
-## 文件目录(Generate By ChatGPT4o)
+## 文件目录 (Generate By ChatGPT)
 
 <details>
 <summary>docker</summary>
 
 - [`network-mode-work-with-system-firewall.md`](./docker/network-mode-work-with-system-firewall.md): 记录了如何在 Docker 中配置网络模式以与系统防火墙协作。
+
+</details>
+
+<details>
+<summary>ffmpeg</summary>
+
+- [`ffmpeg_command_order_impact.md`](./ffmpeg/ffmpeg_command_order_impact.md): 记录了 ffmpeg 命令顺序对执行时间的影响。
 
 </details>
 
@@ -73,6 +80,7 @@
 <summary>nodejs</summary>
 
 - [`fast-preview-h5-project.md`](./nodejs/fast-preview-h5-project.md): 快速预览 H5 项目的方法。
+- [`nodejs_object_parameter_mutation.md`](./nodejs/nodejs_object_parameter_mutation.md): 讨论 Node.js 中对象参数传入时导致的值修改问题及解决方案。
 - [`parseInt-in-js.md`](./nodejs/parseInt-in-js.md): 解释 JavaScript 中 `parseInt` 函数的使用细节。
 - [`state-management-in-nodejs-framework.md`](./nodejs/state-management-in-nodejs-framework.md): 讨论 Node.js 框架中的状态管理。
 - [`Taro/Taro-downgrade.md`](./nodejs/Taro/Taro-downgrade.md): 记录如何将 Taro 版本降级。
@@ -91,6 +99,7 @@
 - [`laravel/laravel-collection-merge-vs-concat.md`](./php/laravel/laravel-collection-merge-vs-concat.md): 比较 Laravel 中 `merge` 和 `concat` 方法的区别。
 - [`laravel/laravel-model-relationship-between-different-connection.md`](./php/laravel/laravel-model-relationship-between-different-connection.md): 处理 Laravel 中不同数据库连接之间的模型关系。
 - [`laravel-admin/number-method-save-as-string.md`](./php/laravel-admin/number-method-save-as-string.md): 说明在 Laravel Admin 中如何将数字方法保存为字符串。
+- [`php_array_delete_reindex.md`](./php/php_array_delete_reindex.md): 使用 `array_values` 重新格式化 PHP 数组键。
 - [`php-array_merge-or-+.md`](./php/php-array_merge-or-+.md): 讨论 PHP 中 `array_merge` 和 `+` 操作符的区别。
 - [`php-try-catch-finally.md`](./php/php-try-catch-finally.md): 记录 PHP 中 `try-catch-finally` 结构的使用。
 - [`strtotime-get-this-monday-timestamp.md`](./php/strtotime-get-this-monday-timestamp.md): 获取当前星期一的时间戳方法。
@@ -103,6 +112,7 @@
 
 - [`add-apt-repository.md`](./python/add-apt-repository.md): 在 Ubuntu 系统中添加 APT 源。
 - [`pyinstaller/build-exe-onefile.md`](./python/pyinstaller/build-exe-onefile.md): 使用 PyInstaller 构建单文件可执行文件。
+- [`python3.12_changes_and_pip_pipx.md`](./python/python3.12_changes_and_pip_pipx.md): 记录 Python 3.12 的变更及 `pip` 与 `pipx` 的区别。
 - [`python-create-a-tuple.md`](./python/python-create-a-tuple.md): 记录如何在 Python 中创建元组。
 - [`scrapy/attrs-module-not-installed.md`](./python/scrapy/attrs-module-not-installed.md): 解决 Scrapy 中缺少 `attrs` 模块的问题。
 
@@ -132,6 +142,7 @@
 <summary>tools</summary>
 
 - [`pm2.md`](./tools/pm2.md): 记录使用 PM2 进行进程管理的技巧。
+- [`thunderbird_edit_defautl_sort.md`](./tools/thunderbird_edit_defautl_sort.md): 修改 Thunderbird 默认排序的配置方法。
 
 </details>
 
