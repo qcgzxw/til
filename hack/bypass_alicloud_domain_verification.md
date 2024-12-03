@@ -26,9 +26,9 @@
 
 ```bash
 # 屏蔽443端口的所有 RST 包
-iptables -A INPUT -p tcp --dport 443 --tcp-flags RST RST -j DROP
+iptables -I INPUT -p tcp --dport 443 --tcp-flags RST RST -j DROP
 # 由于docker独立于INPUT和OUTPUT链，需要额外添加docker的规则
-iptables -A DOCKER-USER -p tcp --dport 443 --tcp-flags RST RST -j DROP
+iptables -I DOCKER-USER -p tcp --dport 443 --tcp-flags RST RST -j DROP
 ```
 ### 2. 客户端 屏蔽 RST 包
 使用 `iptables` 在服务器端屏蔽来自阿里云防火墙伪造的来自服务器的 RST 包：
@@ -37,10 +37,10 @@ iptables -A DOCKER-USER -p tcp --dport 443 --tcp-flags RST RST -j DROP
 
 ```bash
 # 屏蔽来自SERVER-IP 443端口的 RST 包
-iptables -A INPUT -s 1.1.1.1 -p tcp --dport 443 --tcp-flags RST RST -j DROP
+iptables -I INPUT -s 1.1.1.1 -p tcp --dport 443 --tcp-flags RST RST -j DROP
 
 # 由于docker独立于INPUT和OUTPUT链，需要额外添加docker的规则
-iptables -A DOCKER-USER -s 1.1.1.1 -p tcp --dport 443 --tcp-flags RST RST -j DROP
+iptables -I DOCKER-USER -s 1.1.1.1 -p tcp --dport 443 --tcp-flags RST RST -j DROP
 ```
 
 PS: 可以直接在OpenWrt添加自定义规则，局域网内所有设备都可以连接
