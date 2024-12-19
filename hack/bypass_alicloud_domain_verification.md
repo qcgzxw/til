@@ -37,18 +37,25 @@ iptables -I DOCKER-USER -p tcp --dport 443 --tcp-flags RST RST -j DROP
 
 ```bash
 # 屏蔽来自SERVER-IP 443端口的 RST 包
-iptables -I INPUT -s 1.1.1.1 -p tcp --dport 443 --tcp-flags RST RST -j DROP
+iptables -I INPUT -s 1.1.1.1 -p tcp --sport 443 --tcp-flags RST RST -j DROP
 
 # 由于docker独立于INPUT和OUTPUT链，需要额外添加docker的规则
-iptables -I DOCKER-USER -s 1.1.1.1 -p tcp --dport 443 --tcp-flags RST RST -j DROP
+iptables -I DOCKER-USER -s 1.1.1.1 -p tcp --sport 443 --tcp-flags RST RST -j DROP
 ```
 
 PS: 可以直接在OpenWrt添加自定义规则，局域网内所有设备都可以连接
 ```bash
 # 屏蔽INPUT，OpenWrt本地生效
-iptables -I INPUT -s 1.1.1.1 -p tcp --dport 443 --tcp-flags RST RST -j DROP
+iptables -I INPUT -s 1.1.1.1 -p tcp --sport 443 --tcp-flags RST RST -j DROP
 # 屏蔽FORWARD，局域网内所有设备生效
-iptables -I FORWARD -p tcp -s 1.1.1.1 --dport 443 --tcp-flags RST RST -j DROP
+iptables -I FORWARD -p tcp -s 1.1.1.1 --sport 443 --tcp-flags RST RST -j DROP
+```
+## 测试命令:
+```bash
+# 看是否能获取到正确的证书而不报错
+1. openssl s_client -showcerts -connect www.cloudflare.com:443 | openssl x509 -noout -dates
+2. openssl s_client -connect 1.1.1.1:443 -servername www.cloudflare.com
+
 ```
 
 ## 效果图:
