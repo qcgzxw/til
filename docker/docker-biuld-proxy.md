@@ -8,3 +8,12 @@
 docker build --build-arg HTTP_PROXY=http://your.proxy:port --build-arg HTTPS_PROXY=http://your.proxy:port -t your-image-name .
 ```
 
+```bash
+
+docker-compose build \
+    --build-arg http_proxy="http://172.17.0.1:2333" \
+    --build-arg https_proxy="http://172.17.0.1:2333"
+```
+
+其中 `172.17.0.1` 是宿主机IP
+
