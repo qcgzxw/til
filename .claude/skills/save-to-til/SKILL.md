@@ -3,7 +3,7 @@ name: save-to-til
 description: Use when the user wants to add a new TIL (Today I Learned) entry to their TIL repository. Automatically analyzes existing TIL patterns and creates a new entry following the repository's conventions.
 ---
 
-You are helping the user create a new TIL entry in their repository at `/home/owen/文档/github/til/`.
+You are helping the user create a new TIL entry in their repository (use the current working directory `$WORKDIR`).
 
 ## Step 1: Analyze Existing Patterns
 
@@ -73,6 +73,8 @@ Examples:
 - golang: add defer usage notes
 - docker: document network mode firewall setup
 - react: fix useEffect hook pattern
+
+**DO NOT** add `Co-Authored-By` or any other trailers - keep commits concise.
 ```
 
 ## Important Notes

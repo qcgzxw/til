@@ -2,7 +2,7 @@
 
 ## Repository Structure
 
-This is a TIL (Today I Learned) repository located at `/home/owen/文档/github/til/cc/`.
+This is a TIL (Today I Learned) repository.
 
 ### Directory Organization
 
@@ -61,6 +61,7 @@ Examples:
 - Lowercase topic and description
 - Use colon and space after topic
 - Be concise but descriptive
+- **DO NOT** add `Co-Authored-By` or any other trailers
 
 ## Readme Update Convention
 
