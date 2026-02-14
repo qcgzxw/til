@@ -47,6 +47,30 @@ https://github.com/obra/superpowers
 https://github.com/OthmanAdi/planning-with-files
 ```
 
+#### Skills Updater
+管理、更新和发现 Claude Code 技能的工具，支持多种安装来源。
+
+**功能特性**：
+- **更新检查** - 扫描已安装技能，检查可用更新
+- **自动安装** - 市场更新后自动重新安装受影响的技能
+- **技能推荐** - 从 skills.sh 发现热门技能
+- **国际化支持** - 自动检测语言环境（中文/英文）
+
+**安装方法**：
+
+```bash
+https://github.com/yizhiyanhua-ai/skills-updater
+```
+
+**使用方式**：
+
+```
+检查更新：检查 skills 更新
+更新市场：更新 xxx 市场
+技能推荐：推荐一些好用的 skills
+更新全部：更新所有 skills
+```
+
 ---
 
 ### 推荐 MCP Servers
