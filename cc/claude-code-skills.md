@@ -48,7 +48,7 @@ https://github.com/OthmanAdi/planning-with-files
 ```
 
 #### Skills Updater
-管理、更新和发现 Claude Code 技能的工具，支持多种安装来源。
+管理、更新和发现 Claude Code 技能的工具,支持多种安装来源。
 
 **功能特性**：
 - **更新检查** - 扫描已安装技能，检查可用更新
@@ -69,6 +69,32 @@ https://github.com/yizhiyanhua-ai/skills-updater
 更新市场：更新 xxx 市场
 技能推荐：推荐一些好用的 skills
 更新全部：更新所有 skills
+```
+
+#### Pretty-mermaid-skills
+为 AI 提供 Mermaid 图表渲染能力，支持 SVG 和 ASCII 输出，内置 15 种主题，支持批量并行渲染。
+
+```bash
+https://github.com/imxv/Pretty-mermaid-skills
+```
+
+#### Taste-Skill (High-Agency Frontend)
+前端设计质量提升 Skill，强制 AI 生成高质量、现代化的界面，避免千篇一律的"AI 风格"设计。
+
+**核心特性**：
+- **设计参数控制**：通过 3 个核心参数（设计方差、动效强度、视觉密度）精细控制界面风格
+- **反 AI 设计模式**：禁止常见的 AI 生成痕迹（Inter 字体、emoji、紫色渐变、居中布局等）
+- **高级 UI 模式库**：内置 100+ 创意组件模式（磁性按钮、Bento Grid、视差滚动等）
+- **性能优化指南**：严格的 CSS 硬件加速、React 性能最佳实践
+
+**适用场景**：
+- SaaS Dashboard 开发
+- 高端产品落地页
+- 创意作品集网站
+- 任何需要"非模板感"的前端项目
+
+```bash
+https://github.com/Leonxlnx/taste-skill
 ```
 
 ---
